@@ -8,7 +8,7 @@
 					<h3 class="widget-title">Contato</h3>
 					<div class="widget-body">
 						<p ><i class="fa fa-phone"></i> (11)4371-3717</p>
-						<p ><i class="fa fa-whatsapp"></i> (11)9 4069-1063 / (11)9 8397-6827</p>
+						<p ><i class="fa fa-whatsapp"></i> (11)9 9206-1157 / (11)9 4572-7319</p>
 						<p><i class="fa fa-envelope-o"></i> cecapi.iho@gmail.com</p>						
 						<p><i class="fa fa-map-marker"></i>
 						Rua Joaquim Ferrer, 410 - Jardim Vivan - São Paulo -SP - 02990-335</p>
