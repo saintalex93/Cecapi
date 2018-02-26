@@ -27,22 +27,22 @@ $paginaLink = $_SERVER['SCRIPT_NAME'];
 				Envie uma mensagem para nós. Retornaremos o mais rapido possivel
 			</p>
 			<br>
-			<form>
+			<form method="POST" action="phpmailer.php">
 				<div class="row">
 					<div class="col-sm-4">
-						<input class="form-control" type="text" placeholder="Nome">
+						<input class="form-control" type="text" placeholder="Nome" name="Nome" id="Nome">
 					</div>
 					<div class="col-sm-4">
-						<input class="form-control" type="text" placeholder="Email">
+						<input class="form-control" type="text" placeholder="Email" name="Email" id="Email">
 					</div>
 					<div class="col-sm-4">
-						<input class="form-control" type="text" placeholder="Telefone">
+						<input class="form-control" type="text" placeholder="Telefone" name="Telefone" id="Telefone">
 					</div>
 				</div>
 				<br>
 				<div class="row">
 					<div class="col-sm-12">
-						<textarea placeholder="Mensagem" class="form-control" rows="9"></textarea>
+						<textarea placeholder="Mensagem" class="form-control" rows="9" name="Mensagem" id="Mensagem"></textarea>
 					</div>
 				</div>
 				<br>
