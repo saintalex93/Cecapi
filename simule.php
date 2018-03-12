@@ -33,23 +33,23 @@ include_once('superior.php');
 								<div class="col-sm-12">
 
 									<label>Nome</label>
-									<input type="text" class="form-control" id="NomeCli">
+									<input type="text" class="form-control" id="NomeCli" required>
 								</div>
 							</div>
 							<div class="row top-margin">
 								<div class="col-sm-12">
 									<label>CPF <span class="text-danger">*</span></label>
-									<input type="text" class="form-control" id="CPFCli">
+									<input type="text" class="form-control" id="CPFCli" required>
 								</div>
 							</div>
 							<div class="row top-margin"> 
 								<div class=" col-sm-6">
 									<label>Telefone <span class="text-danger">*</span></label>
-									<input type="text" class="form-control" id="TelFixo">
+									<input type="tel" class="form-control" id="TelFixo" required>
 								</div>
 								<div class=" col-sm-6">
 									<label>Celular</label>
-									<input type="text" class="form-control" id="TelCel">
+									<input type="text" class="form-control" id="TelCel" required>
 								</div>
 							</div>
 
@@ -77,7 +77,7 @@ include_once('superior.php');
 								<div class="top-margin text-center">
 									
 									<label id="ValorEmprestimo" style="text-align: justify;margin: 1%;"></label>
-							
+
 									<br>
 								</div>
 							</div>
@@ -99,20 +99,18 @@ include_once('superior.php');
 include_once('inferior.php');
 ?>
 
-</html>
 <script src="assets/js/jquery.maskMoney.min.js"></script>
+<script src="assets/js/jquery.mask.js"></script>
+<script src="assets/js/jquery-3.2.1.js"></script>
 <script>
 	$("#VlrBenCli").maskMoney({prefix:'R$', allowNegative: true, thousands:'.', decimal:',', affixesStay: true});
+	
 
-
-
+	$(function(){
+		$("#TelFixo").mask("(99) 9999-9999");
+	}
 </script>
 
+</html>
 
-<script>
-	(function(){
-	// document.getElementById('ValorEmprestimo').innerHTML = 'Teste';\
-	// document.getElementById('ValorEmprestimo').innerText = 'Check List';
 
-}());
-</script>
